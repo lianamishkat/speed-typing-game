@@ -1,0 +1,96 @@
+:root {
+    --dark: #0b090a;
+    --gray: #1b1b1b;
+    --dark-peach: #e85d04;
+    --light-gray: #b1a7a6;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    background: var(--gray);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2,
+  h3 {
+    text-transform: uppercase;
+    padding: 0.5em;
+    margin: 1em;
+    letter-spacing: 1.5px;
+  }
+  
+  span {
+    color: var(--dark-peach);
+    position: relative;
+  }
+  
+  span:before {
+    position: absolute;
+    content: "";
+    height: 0.2em;
+    width: 80%;
+    bottom: 0.1em;
+    z-index: -1;
+    background: yellow;
+  }
+  
+  h3 {
+    color: var(--dark-peach);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 650px;
+    margin: 3em auto;
+    padding: 1em;
+    text-align: center;
+    background: var(--dark);
+    box-shadow: 0px 10px 25px rgb(0, 0, 0, 0.3);
+  }
+  
+  textarea {
+    width: 70%;
+    height: 200px;
+    background: var(--dark-peach);
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark);
+  }
+  
+  button {
+    background: linear-gradient(
+      45deg,
+      #ffba08,
+      #faa307,
+      #f48c06,
+      #e85d04,
+      #dc2f02,
+      #d00000,
+      #9d0208
+    );
+    font-size: 1rem;
+    padding: 0.5em 0.75em;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+  
+  textarea:disabled,
+  button:disabled {
+    background: var(--light-gray);
+  }
+  
